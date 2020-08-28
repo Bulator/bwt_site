@@ -1,0 +1,136 @@
+@import "global";
+@import "header";
+@import "banner";
+@import "banner-menu";
+@import "galary";
+@import "media";
+
+body {
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100%;
+	padding: 0 15px;
+}
+.managers-people-item__man {
+	font-family: 'Gotham Pro Bold';
+	font-size: 28px;
+	margin-right: 15px;
+}
+.managers {
+	padding-top: 40px;
+}
+.managers-people {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+.managers-people-item {
+	display: flex;
+	align-items: center;
+}
+.managers-people-item__icon {
+	margin-right: 10px;
+}
+.footer {
+	margin-top: 40px;
+	position: relative;
+	min-height: 620px;
+	padding-top: 180px;
+	&__clouds{ 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+	}
+	.container {
+		z-index: 20;
+		position: relative;
+	}
+	&_block {
+		background: #ffffff;
+		max-width: 437px;
+		padding: 50px 30px;
+		border-top: 1px solid #d02121; 
+		font-family: 'Gotham Pro Regular';
+		font-size: 20px;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 30px;
+			background: url('./images/footer-treangle.png') no-repeat center center;
+			background-size: cover;
+		}
+		.banner-text {
+			font-size: 3.2px;
+			margin-bottom: 40px;
+		}
+		.banner-text__bwt, .banner-text__description {
+			color: #000;
+		}
+		.footer_block__text1 {
+			margin-bottom: 25px;
+		}
+		.footer_block__phone {
+			font-family: 'Gotham Pro Bold';
+			color: #000000;
+			display: block;
+			margin-bottom: 15px;
+		}
+	}
+}
+#map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.footer__bottom {
+	background: #272727;
+	font-family: 'Gotham Pro Regular';
+	padding: 20px 0
+}
+.footer__bottom_text1 {
+	font-size: 19px;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+.politic {
+	color: #fff;
+	font-size: 13px;
+}
+input {
+	width: 100%;
+	padding: 15px 25px;
+	border-radius: 6px;
+	border: 1px solid #cecece;
+	display: block;
+	margin-bottom: 15px !important;
+	font-size: 23px;
+}
+.modal {
+	font-family: 'Gotham Pro Regular';
+	font-size: 23px;
+	font-size: 14px;
+	position: relative;
+	z-index: 100;
+	.redbutton {
+		font-size: 17px;
+		width: 100%;
+	}
+	&_title {
+		margin-bottom: 20px;
+	}
+}
+.blocker {
+	z-index: 100 !important;
+}

@@ -1,0 +1,76 @@
+.banner-container_flex {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.banner {
+    height: 24%;
+    background-image: url('images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25%;
+
+        &__bwt, &__description {
+            color: #ffffff;
+        }
+
+        &__bwt {
+            font-family: 'Gotham Pro Bold';
+            font-size: 8.8em;
+
+            &_lngred {
+                color: red;
+            }
+        }
+
+        &__description {
+            font-size: 2.8em;
+            font-family: 'font29814a311b97704e2ef6dd9683fcef41';
+            padding-left: .2em;
+        }
+
+    }
+
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+
+        &__reserve {
+            color: #ffffff;
+            font-size: 2em;
+            font-family: 'font29814a311b97704e2ef6dd9683fcef41';
+            width: 15.2em;
+            height: 3em;
+            border-radius: 30em; 
+        }
+
+        &__reserve {
+            background: linear-gradient(180deg, rgba(121,9,9,1) 0%, rgba(255,52,52,1) 0%, rgba(168,16,16,1) 53%);
+        }
+
+        &__showmenu {
+            color: #fff;
+            font-size: 2em;
+            background: none;
+            border: 1px solid #918c84;
+            text-align: center;
+            font-family: 'font29814a311b97704e2ef6dd9683fcef41';
+            border-radius: 30em;
+            padding: 10px 60px;
+
+            &__img {
+                position: relative;
+                left: 2em;
+            }
+        }
+    }
+}

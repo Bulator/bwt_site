@@ -1,0 +1,46 @@
+.galary {
+    background-image: url('images/galarybg.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 27%;
+    width: 100%;
+
+    &-wrapper {
+        height: 55%;
+    }
+
+    &__text {
+        font-family: 'Gotham Pro Medium';
+        font-size: 1.7em;
+        color: #bebebe;
+        text-align: center;
+        line-height: 1.8em;
+        margin-bottom: 35px;
+    }
+
+    &-slider {
+        padding: 0 80px;
+    }
+
+    &-slider__img {
+        max-width: 96%;
+        margin: auto;
+    }
+
+    &-slider__arrow {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translate(0,-50%);
+        left: 0;
+        cursor: pointer;
+
+        &_right {
+            right: 0;
+            left: auto;
+            transform: rotate(180deg) translate(0,50%);
+
+        }
+    }
+}
